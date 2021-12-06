@@ -1,0 +1,45 @@
+GET http://localhost:3000/movies/
+
+##########################
+
+GET http://localhost:3000/users/
+
+##########################
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "",
+  "genre": "",
+  "year": 2013,
+  "rate": 2
+}
+
+##########################
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "nom": "roger",
+  "prenom": "rabit",
+  "email": "rabit@ddddstt.fr",
+  "password": "rabit@123456789",
+  "langue": "",
+  "ville": ""
+}
+
+##############
+
+DELETE http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "k2000"
+}
+
+##############
+
+DELETE http://localhost:3000/users/
+Content-Type: application/json
